@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR.js Image Tracking</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+
+    <!-- AR.js scene -->
+    <a-scene embedded arjs>
+        <!-- Marker definition: change 'hiro' to your custom marker or pattern URL -->
+        <a-marker type="pattern" url="C:/Users/jsenthilkum/Downloads/Pattern.patt">
+            <!-- 3D Object example (A-Frame Box) -->
+            <!-- OR: Image Projection Example -->
+            <a-image src="C:/Users/jsenthilkum/Downloads/sujo1_ws.png" position="0 0.5 0" scale="1 1 1"></a-image>
+        </a-marker>
+
+        <!-- A basic camera for AR.js -->
+        <a-entity camera></a-entity>
+    </a-scene>
+
+</body>
+</html>
